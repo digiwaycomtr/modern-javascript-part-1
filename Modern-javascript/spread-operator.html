@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operatör</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+            //1- Bir diziyi kopyalama
+                // const sayilar1 = [1,2,3];
+                // const sayilar2 = sayilar1;  //referans kopyalama
+                // sayilar2[0] = 105;
+                // console.log(sayilar1,sayilar2)
+
+                // const numbers = [1,2,3];
+                // const copyNumbers = [...numbers];
+
+                // copyNumbers[0] = 100;
+
+                // console.log(copyNumbers,numbers);
+
+            //2- Dizileri Birleştirme (concat yerine spread kullanımı)
+                // const arr1 = [1,2,3];
+                // const arr2 = [4,5,6];
+
+                // const combined = [...arr1, ...arr2];
+
+                // console.log(combined);
+
+            //3- Dizinin içine yeni eleman eklemek
+                // const numbers = [2,3,4];
+                
+                // const newNumbers= [1,...numbers,5];
+
+                // console.log(newNumbers);
+             
+            //4- Nesneyi Kopyalama    
+                //  const person = {name: "Atakan", age: 32};
+                //  const copyPerson = {...person};
+
+                //  console.log(copyPerson);
+
+            // 5- Nesneyi güncelleme ve yeni alan ekleme
+
+                //  const person = {name: "Atakan", age: 32};
+
+                //  const updatedPerson = {...person, age:35, city: "İstanbul"};
+
+                //  console.log(updatedPerson);
+
+            //6- Fonksiyonlarda dizi elemanlarını argüman olarak geçirme
+
+                // const numbers = [10,20,30,5,15];
+
+                // const maxNumber = Math.max(...numbers);
+
+                // console.log(maxNumber);
+
+            //7- Dinamik Parametreler
+                
+            // function sum(a, b, c) {
+            //     return a+b+c;
+            // }
+
+            // const numbers = [2,3,5,20];
+
+            // console.log(sum(...numbers));
+
+
+            //rest parameters
+
+            //    function sum(...args) {
+            //         let sonuc = 0;
+
+            //         for(let sayi of args) 
+            //         {
+            //             sonuc += sayi;
+            //         }
+            //         return sonuc;
+            //    }
+
+            //    console.log(sum(2,3,5));
+            //    console.log(sum(2,3,5,20,30,40));
+
+
+    </script>
+
+
+</body>
+</html>

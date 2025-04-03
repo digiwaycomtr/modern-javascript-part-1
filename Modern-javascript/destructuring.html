@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    
+    
+
+
+
+
+
+
+    <script>
+        
+        // const numbers = [10,20,30];
+
+        // const first = numbers[0];
+        // const second = numbers[1];
+        // const third = numbers[2];
+
+        // const [first, second, third] = numbers;
+
+        // const colors = ["Kırmızı", "Mavi", "Yeşil"];
+
+        // const [primary, secondary, tertiary] = colors;
+
+        // console.log(primary);
+        // console.log(secondary);
+        // console.log(tertiary);
+
+        // const numbers = [10,20];
+        // const [a,b,c = 30] = numbers;
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+
+        // const person = {
+        //     name: "Atakan",
+        //     age: 32,
+        //     city: "İstanbul"
+        // }
+
+        // const name = person.name;
+        // const age = person.age;
+        // const city = person.city;
+
+        // const {name, age,city} = person;
+
+        // console.log(name);
+        // console.log(age);
+        // console.log(city);
+
+        // const {name: firstName, age: yearsOld, city: town} = person;
+
+        // console.log(firstName);
+        // console.log(yearsOld);
+        // console.log(town);
+
+
+        // const user = {
+        //     username: "atakangenc",
+        //     email: "atakan@digiway.com.tr"
+        // };
+
+        // const {username, email, role="User"} = user;
+
+        // console.log(username);
+        // console.log(email);
+        // console.log(role);
+
+
+        function printUser ({username, email}) {
+            console.log("Kullanıcı Adı: ${username}, Email: ${email}")
+        }
+
+        const user = {
+            username: "atakangenc",
+            email:"atakan@digiway.com.tr"
+        }
+
+        printUser(user);
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

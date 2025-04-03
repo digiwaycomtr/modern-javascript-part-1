@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalıtım</title>
+</head>
+<body>
+
+
+
+    <script> 
+        // class Hayvan {
+        //     constructor(ad) {
+        //         this.ad = ad;
+        //     }
+
+        //     sesCikar() {
+        //         console.log("Bu hayvan ses çıkarıyor.");
+        //     }
+        // }
+
+        // class Kopek extends Hayvan {
+        //     constructor(ad,cins) {
+        //       super(ad);  // Üst sınıfın (Hayvan) constructorını çağırır.
+        //       this.cins = cins;
+        //     }
+
+        //     havla() {
+        //         console.log("Hav Hav!");
+        //     }
+        // }
+
+        // const kopek1 = new Kopek ("Karabaş", "Golden Retriever");
+        // console.log(kopek1.ad);
+        // console.log(kopek1.cins);
+        // kopek1.sesCikar();
+        // kopek1.havla();
+
+
+        class Hayvan {
+            sesCikar() {
+                console.log("Bu hayvan ses çıkarıyor.")
+            }
+        }
+
+        class Kedi extends Hayvan {
+            sesCikar() {
+              console.log("Miyav Miyav!");  
+            }
+        }
+
+
+        const kedi1 = new Kedi();
+        kedi1.sesCikar();
+
+
+    </script>
+    
+</body>
+</html>

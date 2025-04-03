@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+        //ES5 Function Constructor
+            // function Araba(marka,model,yil) {
+            //     this.marka = marka;
+            //     this.model = model;
+            //     this.yil = yil;
+            // }
+
+            // Araba.prototype.bilgiVer = function () {
+            //     return `${this.marka} ${this.model}, ${this.yil} model bir arabadır`;
+            // }
+
+            // var araba1 = new Araba("Toyota","Corolla",2022);
+            // console.log(araba1.marka);
+
+        //ES6 Class
+            class Araba{
+               constructor(marka,model,yil) {
+                    this.marka = marka;
+                    this.model = model;
+                    this.yil = yil;  
+               } 
+
+               bilgiVer() {
+                return `${this.marka} ${this.model}, ${this.yil} model bir arabadır`;  
+               }
+            }
+
+            const araba1 = new Araba("Toyota","Corolla",2022);
+            console.log(araba1.bilgiVer());
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function'ın diziler üzerinde kullanımı</title>
+</head>
+<body>
+    
+    
+
+
+
+
+    <script>
+      //map(), bir diziyi dönüştürmek için kullanılır. Her elamanı alır, belirttiğimiz işlemden geçirir ve yeni bir dizi döndürür.
+
+        // const numbers = [1,2,3,4,5];
+        // const doubled = numbers.map(num => num * 2);
+
+        // console.log(doubled);
+
+      //filter(), bir dizide belirli bir şarta uyan elemenları seçmek için kullanılır. filter(), sadece true elemanları yeni diziye ekler. 
+
+        //   const numbers = [1,2,3,4,5,6];
+
+        //   const evenNumbers = numbers.filter(num => num % 2 === 0);
+        //   console.log(evenNumbers);
+
+        //reduce(), dizideki elemanları tek bir değere indirgemek için kullanılır.
+
+            // const numbers = [1,2,3,4,5];
+
+            // const sum = numbers.reduce((acc,num) => acc + num, 0);
+            // console.log(sum);
+
+        //forEach(), dizinin her elemanında bir işlem yapmak için kullanılır ancak yeni bir dizi döndürmez.
+        
+            // const fruits = ["Elma", "Muz", "Çilek"];
+
+            // fruits.forEach(fruit => console.log(fruit));
+
+        //find(), belirtilen şarta uyan ilk elemanı geriye döndürür.
+        
+            const ages = [15, 20, 17, 25,30];
+            const firstAdult = ages.findIndex(age => age>=18);
+
+            console.log(firstAdult);
+
+
+
+
+    </script>
+</body>
+</html>

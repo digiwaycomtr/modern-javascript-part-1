@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets</title>
+</head>
+<body>
+    
+
+
+
+
+
+<script>
+    //   const mySet = new Set();
+     
+
+    //   mySet.add(10); 
+    //   mySet.add(20);
+    //   mySet.add(30); 
+    //   mySet.add(30); 
+    //   console.log(mySet);  
+
+    const numbers = [1,2,2,3,4,4,5];
+    const uniqueNumbers = new Set(numbers);
+
+    uniqueNumbers.delete(3);
+    // console.log(uniqueNumbers.has(2));
+    // console.log(uniqueNumbers.has(6));
+
+    // console.log(uniqueNumbers.size);
+
+
+
+    // uniqueNumbers.forEach(value => {
+    //     console.log(value);
+    // });
+
+    for(let value of uniqueNumbers) {
+        console.log(value);
+    }
+
+    uniqueNumbers.clear();
+    console.log(uniqueNumbers);
+
+
+
+    // console.log(uniqueNumbers);
+
+    // const uniqueArray = [...uniqueNumbers];
+    // const uniqueArray = Array.from(uniqueNumbers);
+    // console.log(uniqueArray);
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+<script>
+
+    const myMap = new Map();
+    // console.log(myMap);
+
+    // myMap.set("isim", "Atakan");
+    // myMap.set(1,"Bir numara");
+    // myMap.set(true,"Doğru");
+
+    // console.log(myMap.get("isim"));
+    // console.log(myMap.get(1));
+    // console.log(myMap.get(true));
+
+    // console.log(myMap.size);
+
+    // console.log(myMap.has("isim"));
+    // console.log(myMap.has("yaş"));
+
+    // myMap.delete(1);
+    // console.log(myMap.size);
+
+    // myMap.clear();
+    // console.log(myMap.size);
+
+    myMap.set("isim", "Atakan");
+    myMap.set("yaş", 32);
+
+    // myMap.forEach((value, key) => {
+    //     console.log(`${key}: ${value}`);
+    // })
+
+    // for(let [key,value] of myMap)
+    // {
+    //     console.log(`${key}: ${value}`);
+    // }
+
+    console.log([...myMap.keys()]);
+    console.log([...myMap.values()]);
+    console.log([...myMap.entries()]);
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

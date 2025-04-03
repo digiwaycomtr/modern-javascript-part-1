@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+    <script>
+
+        class Kisi {
+            constructor(ad,yas) {
+                this.ad = ad;
+                this._yas = yas;
+            }
+
+            //Getter: Yaşı okuma metodu
+            get yas() {
+                return `${this._yas} yaşındayım.`;
+            }
+
+            //Setter: Yaşı değiştirme metodu
+            set yas(yeniYas) {
+                if(yeniYas>0) 
+                {
+                  this._yas = yeniYas  
+                }else{
+                    console.log("Yaş negatif olamaz");
+                }
+            }
+
+        }
+
+        const kisi1 = new Kisi("Atakan",32);
+        console.log(kisi1.yas);
+
+        kisi1.yas= -5;
+        console.log(kisi1.yas);
+
+
+    </script>
+
+
+
+
+</body>
+</html>
